@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/deciderLogoIV"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/foodTV"
+        app:srcCompat="@drawable/dd_logo"
+        android:padding="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/dinner_decider_logo_cd" />
+
+    <TextView
+        android:id="@+id/foodTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/addFoodET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661"
+        tools:text="Hamburger" />
+
+    <EditText
+        android:id="@+id/addFoodET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:autofillHints="name"
+        android:hint="@string/add_new_food"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        app:layout_constraintBottom_toTopOf="@+id/addFoodBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/addFoodBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/teal"
+        android:contentDescription="@string/add_new_food_button_cd"
+        android:text="@string/add_food_text"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/decideBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/decideBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/teal"
+        android:contentDescription="@string/add_new_food_button_cd"
+        android:text="@string/decide_btn_text"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
